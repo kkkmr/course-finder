@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-title">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="navbar-container">
+                <div class="logo">
+                    <img src="assets/header/logo.svg" alt="KC Overseas Education logo"/>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle Navigation" onclick="toggleMenu()" aria-expanded="false">☰</button>
+                <ul class="nav-links" role="list">
+                    <li><a href="#" onclick="return false;" role="listitem">Study destinations</a></li>
+                    <li><a href="#" onclick="return false;" role="listitem">Services</a></li>
+                    <li><a href="#" onclick="return false;" role="listitem">Company</a></li>
+                    <li><a href="#" onclick="return false;" role="listitem">Upcoming events</a></li>
+                    <li><button class="nav-btn">Course Finder</button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="title-info">
+            <span class="header-design">
+                <span class="header-design-1">
+                    <img src="assets/header/header1.svg" alt="star" aria-hidden="true"/>
+                </span>
+                <span class="header-design-2">
+                    <img src="assets//header/header2.svg" alt="dot" aria-hidden="true"/>
+                </span>
+                <span class="header-design-3">
+                    <img src="assets//header/header3.svg" alt="circle" aria-hidden="true"/>
+                </span>
+                <span class="header-design-4">
+                    <img src="assets//header/header4.svg" alt="star" aria-hidden="true"/>
+                </span>
+                <span class="header-design-5">
+                    <img src="assets//header/header1.svg" alt="gray star" aria-hidden="true"/>
+                </span>
+                <span class="header-design-6">
+                    <img src="assets//header/header2.svg" alt="dot" aria-hidden="true"/>
+                </span>
+            </span>
+            <div class="home-text">
+                <span>Home</span>
+                <span>.</span>
+                <span>Pune Branch</span>
+            </div>
+            <h1>KC Overseas Education</h1>
+            <h1>Pune</h1>
+            <p class="title-description">We value your career aspirations, which is why we map your preferences with the best that 
+                our global universities have to offer. Thousands of our students are pursuing 
+                their programs and aspirations in eminent universities globally and we welcome you to pursue yours!
+            </p>
+            <div class="title-btns">
+                <button class="service-btn">Enquire Now</button>
+                <span aria-label="Branch address" role="button" tabindex="0">
+                    <span class="title-img-bg"> 
+                        <img src="assets/header/down-arrow.svg" alt="Down arrow" aria-hidden="true"/>
+                    </span>
+                    Branch Address
+                </span>
+            </div>
+        </div>
+    </header>
+    <div class="services">
+        <h1>Services we provide</h1>
+        <ul class="services-items">
+            <li>
+                <img src="./assets/services/service1.svg" alt="mouse click" aria-labelledby="test">
+                <span id="test">Test Preparing & Coaching</span>
+            </li>
+            <li>
+                <img src="./assets/services/service2.svg" alt="location" aria-labelledby="course">
+                <span id="course">Course, Country & University Selection</span>
+            </li>
+            <li>
+                <img src="./assets/services/service3.svg" alt="certification" aria-labelledby="assistance">
+                <span id="assistance">Application Assistance</span>
+            </li>
+            <li>
+                <img src="./assets/services/service4.svg" alt="star" aria-labelledby="scholarship">
+                <span id="scholarship">Scholarships</span>
+            </li>
+        </ul>
+        <button class="service-btn">Enquire Now</button>
+    </div>
+    <div class="ambitions">
+        <div class="ambition-img">
+            <picture>
+                <source media="(min-width: 720px)" srcset="./assets/ambitions/ambition1.svg">
+                <img src="assets/ambitions/ambition small.svg" alt="Two people discussing">
+                </picture>
+            
+        </div>
+        <div class="choices-container">
+            <div class="choices">
+                <h2 class="choices-heading">Realise your global ambition with us</h2>
+                <p>With a keen ear for your choices and preferences, our counselling experience is so seamless 
+                    that you will land in your dream university even before you do!</p>
+                <ul>
+                    <li class="preference">
+                        <span class="choices-star-img">
+                            <img src="assets/ambitions/star.svg" alt="star" aria-hidden="true"> 
+                        </span>
+                        <span>
+                            Virtual & In Person Coaching and Counselling
+                        </span>
+                    </li>
+                    <li class="preference">
+                        <span class="choices-star-img">
+                            <img src="assets/ambitions/star.svg" alt="star" aria-hidden="true">
+                        </span>
+                        <span>
+                            Comprehensive Assistance for Applications, Admissions & Visas
+                        </span>
+                    </li>
+                    <li class="preference">
+                        <span class="choices-star-img">
+                            <img src="assets/ambitions/star.svg" alt="star" aria-hidden="true">
+                        </span>
+                        <span>
+                            High Value Scholarships and Study Loans
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="steps">
+        <h1 class="steps-header">7 Easy Steps to Land in your Dream University</h1>
+            <div class="carousel-container" aria-live="polite">
+                <div class="step active">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <img src="assets/steps/couselling.svg" alt="Counselling process guiding students towards academic and career goals"/>
+                    </div>
+                    <div class="step-title">Counselling</div>
+                    <div class="step-subtext">Plan your Academic and Career Goals</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <img src="assets/steps/prep.svg" alt="Test preparation tools helping students succeed in standardized exams"/>
+                    </div>
+                    <div class="step-title">Test Preparation</div>
+                    <div class="step-subtext">Appear for Standardized Tests</div>
+                </div>
+                
+            </div>
+        <div class="carousel-navigation">
+            <span role="button" class="previous-btn" tabindex="0" aria-label="Go to previous step" onclick="slideRight();" onkeydown="handleKeyDown(event);">
+                <strong><</strong> Previous Step
+            </span>
+            <span role="button" class="next-btn" tabindex="0" aria-label="Go to next step" onclick="slideLeft();" onkeydown="handleKeyDown(event);">
+                Next Step <strong>></strong>
+            </span>
+        </div>
+    </div>
+    <div class="webinars">
+        <h1 class="webinar-header">Webinars and events</h1>
+        <div class="events">
+            <div class="event-container large">
+                <div class="event-img-container">
+                    <img src="assets/webinar/usa.svg" alt="USA Virtual Admission Day banner">
+                </div>
+                <div class="event-info-container">
+                    <time class="event-time" datetime="2025-03-19T17:00">Mar 19 · 05:00 PM to 07:30 PM</time>
+                    <div class="event-info">
+                        <div class="event-title">
+                            USA Virtual Admission Day
+                        </div>
+                        <p class="event-description">
+                            Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <span class="event-btn" role="button" tabindex="0" aria-label="Register for USA Virtual Admission Day" onclick="return false;">Register Now > </span>
+                    </div>
+                </div>
+            </div>
+            <div class="event-container">
+                <div class="event-img-container">
+                    <img src="assets/webinar/newzealand.svg" alt="New Zealand Virtual Admissions Week banner">
+                </div>
+                <div class="event-info-container">
+                    <time class="event-time" datetime="2025-05-18T16:30">May 18 - May 21 · 04:30 PM to 06:30 PM</time>
+                    <div class="event-info">
+                        <div class="event-title">
+                            New Zealand Virtual Admissions Week
+
+                        </div>
+                        <p class="event-description">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <span class="event-btn" role="button" tabindex="0" aria-label="Register for New Zealand Virtual Admissions week" onclick="return false;">Register Now > </span>
+                    </div>
+                </div>
+            </div>
+            <div class="event-container">
+                <div class="event-img-container">
+                    <img src="assets/webinar/uk.svg" alt="UK Virtual Admissions Week banner">
+                </div>
+                <div class="event-info-container">
+                    <time class="event-time" datetime="2025-05-24T16:00">May 24 - May 28 · 04:00 PM to 06:00 PM</time>
+                    <div class="event-info">
+                        <div class="event-title">
+                            UK Virtual Admissions Week
+                        </div>
+                        <p class="event-description">
+                            Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <span class="event-btn" role="button" tabindex="0" aria-label="Register for UK Virtual Admission week" onclick="return false;">Register Now > </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="events-seemore" role="button" tabindex="0" aria-label="View more webinars and events">See More ></div>
+    </div>
+    <div class="student-feedback">
+        <h1>Our students love us</h1>
+        <div class="carousel">
+            <button class="prev" onclick="changeSlide(-1)" aria-label="Go to previous student testimonial">❮</button>
+            <div class="carousel-wrapper" aria-live="polite">
+                <div class="carousel-inner">
+                    <div class="carousel-item" aria-hidden="true">
+                        <div class="carousel-content">
+                            <div class="quote-image">
+                                <img src="assets/student-feedback.svg" alt="Quote icon representing student testimonials"/>
+                            </div>
+                            <div class="feedback-description">
+                                Thank you, KC, for all the support you have provided right from shortlisting the university
+                                to the visa interview preparations. I really admire the attention and support of the KC Counsellors.
+                            </div>
+                            <div>
+                                <div>
+                                    <strong>
+                                        Mandar Suryawanshi
+                                    </strong>
+                                </div>
+                                <div>
+                                    Northeastern University, USA
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active" aria-live="assertive">
+                        <div class="carousel-content">
+                            <div class="quote-image">
+                            <img src="assets/student-feedback.svg" alt="Quote icon representing student testimonials"/>
+                            </div>
+                            <div class="feedback-description">
+                                The team made the entire process very easy. Everyone is very helpful and cooperative throughout.
+                                I am thankful to KC Sadar Team for making my dream come true.
+                            </div>
+                            <div>
+                                <div>
+                                    <strong>
+                                        Arohi Sighel
+                                    </strong>
+                                </div>
+                                <div>
+                                    University of South Australia, Australia
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" aria-hidden="true">
+                        <div  class="carousel-content">
+                            <div class="quote-image">
+                            <img src="assets/student-feedback.svg" alt="Quote icon representing student testimonials"/>
+                            </div>
+                            <div class="feedback-description">
+                                Helped with counseling and making the right decision...great staff..would definitely
+                                 recommend it to anyone planning to go abroad for studies..
+                            </div>
+                            <div>
+                                <div>
+                                    <strong>
+                                        Susan Mendonca
+                                    </strong>
+                                </div>
+                                <div>
+                                    Conestoga College, Canada
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" aria-hidden="true">
+                        <div  class="carousel-content">
+                            <div class="quote-image">
+                                <img src="assets/student-feedback.svg" alt="Quote icon representing student testimonials"/>
+                            </div>
+                            <div class="feedback-description">
+                                Thank you, KC, for all the support you have provided right from shortlisting the university
+                                to the visa interview preparations. I really admire the attention and support of the KC Counsellors.
+                            </div>
+                            <div>
+                                <div>
+                                    <strong>
+                                        Mandar Suryawanshi
+                                    </strong>
+                                </div>
+                                <div>
+                                    Northeastern University, USA
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="carousel-item" aria-hidden="true">
+                        <div class="carousel-content">
+                            <div class="quote-image">
+                            <img src="assets/student-feedback.svg" alt="Quote icon representing student testimonials"/>
+                            </div>
+                            <div class="feedback-description">
+                                The team made the entire process very easy. Everyone is very helpful and cooperative throughout.
+                                I am thankful to KC Sadar Team for making my dream come true.
+                            </div>
+                            <div>
+                                <div>
+                                    <strong>
+                                        Arohi Sighel
+                                    </strong>
+                                </div>
+                                <div>
+                                    University of South Australia, Australia
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" aria-hidden="true">
+                        <div class="carousel-content">
+                            <div class="quote-image">
+                            <img src="assets/student-feedback.svg" alt="Quote icon representing student testimonials"/>
+                            </div>
+                            <div class="feedback-description">
+                                The team made the entire process very easy. Everyone is very helpful and cooperative throughout.
+                                I am thankful to KC Sadar Team for making my dream come true.
+                            </div>
+                            <div>
+                                <div>
+                                    <strong>
+                                        Arohi Sighel
+                                    </strong>
+                                </div>
+                                <div>
+                                    University of South Australia, Australia
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" aria-hidden="true">
+                        <div class="carousel-content">
+                            <div class="quote-image">
+                            <img src="assets/student-feedback.svg" alt="Quote icon representing student testimonials"/>
+                            </div>
+                            <div class="feedback-description">
+                                The team made the entire process very easy. Everyone is very helpful and cooperative throughout.
+                                I am thankful to KC Sadar Team for making my dream come true.
+                            </div>
+                            <div>
+                                <div>
+                                    <strong>
+                                        Arohi Sighel
+                                    </strong>
+                                </div>
+                                <div>
+                                    University of South Australia, Australia
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="next" onclick="changeSlide(1)" aria-label="Go to next student testimonial">❯</button>
+        </div>
+        <div class="dots-container" role="tablist"></div>
+    </div>
+    <div class="updates">
+        <h1 class="header">Latest KC updates</h1>
+        <div class="updates-container">
+            <div class="hiring-container">
+                <h1>We're Hiring!</h1>
+                <p>
+                    KC continues recruitments for its offices across India and Asia even 
+                    during the unprecedented times of Covid.
+                </p>
+                <button class="hiring-btn" aria-label="Apply for KC recruitment opportunities"><strong>Apply now</strong></button>
+            </div>
+            <div class="american-container">
+                <div class="update-info-container">   
+                    <span class="update-img"><img src="assets/updates/america.svg" alt="American International Recruitment Council Certified Agents logo"></span>
+                    <span class="title">American International Recruitment Council</span>
+                    <span class="stars"><img src="assets/updates/stars.svg" alt="Rating stars for certification" aria-hidden="true"></span>
+                    <span class="agents">Certified Agents</span>
+                    <time class="time" datetime="2018-10">October 2018 - 2028</time>
+
+                </div>
+            </div>
+            <div class="british-container">
+                <div class="update-info-container">   
+                    <span class="update-img"><img src="assets/updates/british.svg" alt="British Council Advanced Agent Certificate logo"></span>
+                    <span class="title">The British Council</span>
+                     <span class="stars"><img src="assets/updates/stars.svg" alt="Rating stars for certification" aria-hidden="true"></span>
+                    <span class="agents">Advanced Agent Certificate</span>
+                    <time class="time" datetime="2016-08">August 2016 - 2018</time>
+                </div>
+            </div>
+        </div>
+        <span class="updates-seemore" role="button" tabindex="0" aria-label="View more KC updates">More News ></span>
+    </div>
+    <footer class="subscribe">
+        <h1 class="subscribe-header">Stay updated with KC Overseas</h1>
+        <span class="subscribe-style">
+            <img src="assets//footer/subscribe-design.svg" alt="Decorative subscribe design" aria-hidden="true"/>
+        </span>
+        <form>
+            <div class="subscribe-form">
+                <input type="email" name="email" placeholder="Email ID" autocomplete="on"/>
+                <input type="text" name="interest" placeholder="I'm interested" />
+                <button class="subscribe-btn" type="submit" onclick="return false;" aria-label="Subscribe to KC updates"><strong>Subscribe Now</strong></button>
+            </div>
+        </form>
+    </footer>
+    <script src="index.js"></script>
+    <script src="carousel.js"></script>
+</body>
+</html>
