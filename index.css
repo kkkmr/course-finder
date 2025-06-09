@@ -666,6 +666,7 @@ body {
         .services-items{
             li{
                 width: unset;
+                min-width: 22em;
             };
         }
     }
