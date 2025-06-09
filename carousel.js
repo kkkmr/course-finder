@@ -23,7 +23,9 @@ for(let i=0; i<slides.length-2; i++){
 
 const dots = document.querySelectorAll(".dot");
 
-function changeSlide(direction) {
+function changeSlide() {
+    if(this.classList.contains('next')) direction=1;
+    else direction=-1;
     currentIndex += direction;
 
     // Ensure valid range (stopping at first & last card)
@@ -72,5 +74,7 @@ function updateCarousel() {
 
 // Initialize first dot as active & update buttons
 document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector('.prev').addEventListener('click',changeSlide);
+    document.querySelector('.next').addEventListener('click',changeSlide);
     updateCarousel();
 });

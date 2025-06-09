@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-hashes' 'sha256-2rvfFrggTCtyF5WOiTri1gDS8Boibj4Njn0e+VCBmDI='">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="navbar.css">
@@ -15,9 +16,9 @@
                 <div class="logo">
                     <img src="assets/header/logo.svg" alt="KC Overseas Education logo"/>
                 </div>
-                <div class="menu-toggle" onclick="toggleMenu()" aria-expanded="false" role="button" tabindex="0" aria-label="Toggle Navigation">
+                <div class="menu-toggle" aria-expanded="false" role="button" tabindex="0" aria-label="Toggle Navigation">
                     <span class="menu-icon">☰</span> <!-- Hamburger icon -->
-                    <span class="close-icon" style="display: none;">&times;</span> <!-- Cross icon -->
+                    <span class="close-icon">&times;</span> <!-- Cross icon -->
                 </div>
                 <ul class="nav-links" role="list">
                     <li><a href="#" onclick="return false;" role="listitem">Study destinations</a></li>
@@ -157,10 +158,10 @@
                 
             </div>
         <div class="carousel-navigation">
-            <span role="button" class="previous-btn" tabindex="0" aria-label="Go to previous step" onclick="slideRight();" onkeydown="handleKeyDown(event);">
+            <span role="button" class="previous-btn" tabindex="0" aria-label="Go to previous step">
                 <strong><</strong> Previous Step
             </span>
-            <span role="button" class="next-btn" tabindex="0" aria-label="Go to next step" onclick="slideLeft();" onkeydown="handleKeyDown(event);">
+            <span role="button" class="next-btn" tabindex="0" aria-label="Go to next step">
                 Next Step <strong>></strong>
             </span>
         </div>
@@ -228,7 +229,7 @@
     <div class="student-feedback">
         <h1>Our students love us</h1>
         <div class="carousel">
-            <button class="prev" onclick="changeSlide(-1)" aria-label="Go to previous student testimonial">❮</button>
+            <button class="prev" aria-label="Go to previous student testimonial">❮</button>
             <div class="carousel-wrapper" aria-live="polite">
                 <div class="carousel-inner">
                     <div class="carousel-item" aria-hidden="true">
@@ -381,7 +382,7 @@
 
                 </div>
             </div>
-            <button class="next" onclick="changeSlide(1)" aria-label="Go to next student testimonial">❯</button>
+            <button class="next" aria-label="Go to next student testimonial">❯</button>
         </div>
         <div class="dots-container" role="tablist"></div>
     </div>
@@ -425,9 +426,13 @@
         </span>
         <form>
             <div class="subscribe-form">
-                <input type="email" name="email" placeholder="Email ID" autocomplete="on"/>
-                <input type="text" name="interest" placeholder="I'm interested" />
-                <button class="subscribe-btn" type="submit" onclick="return false;" aria-label="Subscribe to KC updates"><strong>Subscribe Now</strong></button>
+                <input type="email" name="email" placeholder="Email ID" autocomplete="on" required/>
+                <select name="interest" placeholder="I'm interested in" required>
+                    <option value="" selected disabled class="select-placeholder">I'm interested in</option>
+                    <option value="company">updates about company </option>
+                    <option value="jobs">updates about opportunities</option>
+                </select>
+                <button class="subscribe-btn" type="submit" aria-label="Subscribe to KC updates"><strong>Subscribe Now</strong></button>
             </div>
         </form>
     </footer>

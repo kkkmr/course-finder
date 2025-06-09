@@ -614,7 +614,7 @@ body {
         margin-top:3em;
         gap:2em;
 
-        input{
+        input,select{
             padding:0.25em;
             padding-left:1em;
             width: 20em;
@@ -631,6 +631,13 @@ body {
             cursor: pointer;
             color:white;
         }
+    }
+
+    select {
+        color: gray;
+    }
+    select.has-value {
+        color: black;
     }
 }
 

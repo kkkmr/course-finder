@@ -79,4 +79,8 @@
     .menu-toggle {
         display: block; /* Show menu button in mobile */
     }
+
+    .close-icon{
+        display: none;
+    }
 }

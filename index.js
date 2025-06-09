@@ -47,3 +47,37 @@ function slideRight(){
     }
 }
 
+// Removing unsafe attributes in input element of form
+function removeUnsafeAttributes(htmlString) {
+    return htmlString.replace(/on\w+="[^"]*"/g, "");
+}
+
+// Sanitizing the input given by user in input element of form
+function sanitizeInput(input) {
+    return input.replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+}
+
+function secureInput() {
+    let input=this.parentElement.querySelector('[name=email]').value;
+    let sanitized = sanitizeInput(input);
+    return removeUnsafeAttributes(sanitized);
+}
+
+// To style placeholder of select 
+document.querySelector("select").addEventListener("change", function() {
+  this.classList.toggle("has-value", this.value !== "");
+});
+
+window.addEventListener("DOMContentLoaded",()=>{
+    document.querySelector('.menu-toggle').addEventListener('click',toggleMenu);
+    document.querySelector('.previous-btn').addEventListener('click',slideRight);
+    document.querySelector('.previous-btn').addEventListener('keydown',handleKeyDown);
+    document.querySelector('.next-btn').addEventListener('click',slideLeft);
+    document.querySelector('.next-btn').addEventListener('keydown',handleKeyDown);
+    document.querySelector('.subscribe-btn').addEventListener('click',secureInput);
+
+})
+
