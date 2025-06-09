@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'BuenosAires';
-  src: url('/font.woff2') format('woff2');
+  src: url('font.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -589,7 +589,7 @@ body {
 }
 
 .subscribe{
-    background-image: url(/assets/footer/subscribe.svg);
+    background-image: url(assets/footer/subscribe.svg);
     background-position: center;
     background-size: cover;
     text-align: center;
