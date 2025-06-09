@@ -3,6 +3,18 @@ function toggleMenu() {
     navLinks.classList.toggle("show");
     const toggleBtn=document.querySelector('.menu-toggle');
     toggleBtn.setAttribute('aria-expanded',`${toggleBtn.getAttribute('aria-expanded')=='false'?'true':'false'}`);
+
+
+    const menuIcon = document.querySelector(".menu-icon");
+    const closeIcon = document.querySelector(".close-icon");
+
+    if (!navLinks.classList.contains('show')) {
+        menuIcon.style.display = "inline"; // Show hamburger icon
+        closeIcon.style.display = "none"; // Hide cross icon
+    } else {
+        menuIcon.style.display = "none"; // Hide hamburger icon
+        closeIcon.style.display = "inline"; // Show cross icon
+    }
 }
 
 function handleKeyDown(event) {
